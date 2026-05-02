@@ -1,10 +1,11 @@
-import { Database, Lightbulb, TrendingUp } from "lucide-react";
+import { ShoppingCart, DollarSign, Settings, BarChart3 } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const blocks = [
-  { icon: Database, title: "Dados em decisões", desc: "Transformamos informação bruta em inteligência acionável." },
-  { icon: Lightbulb, title: "Decisões em estratégia", desc: "Cada decisão é guiada por um plano claro e mensurável." },
-  { icon: TrendingUp, title: "Estratégia em crescimento", desc: "Implementamos e escalamos com previsibilidade." },
+  { icon: ShoppingCart, title: "Comercial", desc: "Pipeline estruturado e previsível" },
+  { icon: DollarSign, title: "Financeiro", desc: "Controle total de receitas, custos e lucro" },
+  { icon: Settings, title: "Operacional", desc: "Processos organizados e escaláveis" },
+  { icon: BarChart3, title: "BI (Inteligência)", desc: "Dashboards com visão completa do negócio" },
 ];
 
 const WhatWeDoSection = () => {
@@ -15,14 +16,14 @@ const WhatWeDoSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className={`text-center max-w-2xl mx-auto mb-16 transition-all duration-700 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-fluxor-graphite tracking-tight">
-            O que a Fluxor faz
+            O sistema que faz sua empresa funcionar com inteligência
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
-            Nós transformamos dados em decisões. Decisões em estratégia. Estratégia em crescimento.
+            Criamos e implantamos um sistema sob medida para sua empresa operar com controle, previsibilidade e escala.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
           {blocks.map((b, i) => (
             <div
               key={b.title}

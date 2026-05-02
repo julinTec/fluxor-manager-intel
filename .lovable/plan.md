@@ -1,68 +1,61 @@
 
-# Site FLUXOR — Crescimento Empresarial
+# Atualização completa do site FLUXOR
 
-Site single-page moderno e premium com 10 seções, estética de consultoria tech, paleta escura com azul vibrante para CTAs.
+Reposicionar todo o site de "consultoria estratégica" para "implantação de sistemas de crescimento", atualizando copy e adicionando 2 novas seções.
 
-## Design System
+## Alterações
 
-- Paleta: preto #0B0B0B, grafite #1A1A1A, branco #FFFFFF, azul profundo #1C2E4A, azul vibrante #2F80ED (apenas CTAs), cinza claro #F5F7FA, cinza médio #D9DDE3
-- Tipografia Inter (já disponível no projeto) com peso variado para hierarquia
-- Espaçamento generoso entre seções (py-24 a py-32)
-- Bordas finas, ícones lineares (Lucide)
+### 1. HeroSection — Novo copy
+- Headline: "Sistemas inteligentes que fazem sua empresa crescer com previsibilidade."
+- Subheadline: "Implantamos um sistema completo integrando Comercial, Financeiro, Operacional e BI em um único fluxo de crescimento."
+- Botão: "Quero meu sistema de crescimento"
 
-## Seções
+### 2. ProblemSection — Dores reais de gestão
+- Texto principal com lista de dores (vendas, financeiro, operação)
+- Frase final: "Sem um sistema, sua empresa cresce no escuro."
 
-1. **Hero** — Fundo escuro (#0B0B0B), headline grande "Crescimento previsível para empresas que querem escalar.", subheadline, botão azul vibrante. Gráfico ascendente animado com SVG (linhas finas, estilo minimalista).
+### 3. WhatWeDoSection — 4 blocos tangíveis
+- Título: "O sistema que faz sua empresa funcionar com inteligência"
+- 4 blocos: Comercial, Financeiro, Operacional, BI (grid 2x2 no desktop)
 
-2. **Problema** — Fundo cinza claro (#F5F7FA). Texto emocional com tipografia grande e espaçada. Destaque visual sutil.
+### 4. Nova seção: SystemOverviewSection
+- Posicionada logo após WhatWeDoSection
+- Título: "Um único sistema para controlar toda sua empresa"
+- 4 cards/lista: CRM, Controle financeiro, Gestão operacional, Dashboards
 
-3. **O que a Fluxor faz** — Fundo branco. Três blocos com ícones lineares: Dados → Decisões → Estratégia → Crescimento. Layout em grid.
+### 5. ProcessSection — Etapas de construção de sistema
+- 4 etapas: Mapeamento → Construção do sistema → Integração de dados → Otimização contínua
 
-4. **Como funciona** — 4 etapas horizontais (Diagnóstico, Estratégia, Execução, Escala) com ícones, números e descrições. Linha conectora entre etapas. Responsivo: vira vertical no mobile.
+### 6. DashboardSection — Melhorar copy
+- Adicionar: "Visualize sua empresa em tempo real. Tome decisões com dados, não com achismo."
 
-5. **Resultados** — Fundo escuro (#1A1A1A). Métricas grandes animadas com contadores (ex: +120%). Barras de progresso ou mini-gráficos SVG.
+### 7. DifferentialSection — Texto mais forte
+- "Você não precisa de mais relatórios..." / "Entregamos um sistema funcionando dentro da sua empresa."
 
-6. **Diferencial** — Fundo grafite com texto branco forte. "Não somos uma agência..." Layout centrado, impactante.
+### 8. SimulationSection — Copy atualizado
+- Descrição e botão atualizados conforme especificado
 
-7. **Simulação** — Fundo cinza claro. Card centralizado com chamada e botão "Simular crescimento" (visual only, sem funcionalidade real).
+### 9. Nova seção: TargetAudienceSection
+- Posicionada antes do CTA final
+- Título: "Para quem a Fluxor é"
+- 4 bullets com perfis de cliente ideal
 
-8. **Dashboard visual** — Mockup de dashboard com gráficos SVG (linhas ascendentes, barras, KPIs). Fundo branco com card elevado simulando uma interface.
+### 10. FinalCTASection — Copy mais direto
+- "Se sua empresa precisa parar de improvisar e começar a crescer com sistema, a Fluxor é o próximo passo."
 
-9. **CTA Final** — Fundo azul profundo (#1C2E4A). Texto branco, botão azul vibrante "Falar com especialista".
+## Arquivos modificados
+- `src/components/HeroSection.tsx`
+- `src/components/ProblemSection.tsx`
+- `src/components/WhatWeDoSection.tsx`
+- `src/components/ProcessSection.tsx`
+- `src/components/DashboardSection.tsx`
+- `src/components/DifferentialSection.tsx`
+- `src/components/SimulationSection.tsx`
+- `src/components/FinalCTASection.tsx`
+- `src/pages/Index.tsx` (adicionar 2 novas seções)
 
-10. **Rodapé** — Fundo #0B0B0B. Logo FLUXOR, tagline, links simples, minimalista.
+## Arquivos criados
+- `src/components/SystemOverviewSection.tsx`
+- `src/components/TargetAudienceSection.tsx`
 
-## Navegação
-
-Header fixo transparente com logo FLUXOR e links âncora para seções principais. Scroll suave. Header ganha fundo sólido ao rolar.
-
-## Animações
-
-- Elementos aparecem com fade-in ao entrar no viewport (Intersection Observer)
-- Contadores animados na seção de resultados
-- Gráfico SVG do hero com animação de desenho de linha
-- Transições suaves nos hovers dos botões
-
-## Componentes
-
-- `Navbar` — header fixo com transparência
-- `HeroSection` — headline + gráfico animado
-- `ProblemSection` — texto emocional
-- `WhatWeDoSection` — grid de blocos
-- `ProcessSection` — 4 etapas
-- `ResultsSection` — métricas animadas
-- `DifferentialSection` — texto impactante
-- `SimulationSection` — CTA visual
-- `DashboardSection` — mockup de dashboard
-- `FinalCTASection` — conversão final
-- `Footer` — rodapé institucional
-
-Cada seção será um componente separado em `src/components/`, composto na página Index.
-
-## Detalhes Técnicos
-
-- CSS variables atualizadas no index.css para a nova paleta
-- Animações via CSS + hook customizado `useInView` com Intersection Observer
-- Gráficos SVG inline (sem dependências externas)
-- Totalmente responsivo (mobile-first)
-- Sem dependências adicionais necessárias
+Design e animações mantidos. Apenas copy e estrutura de conteúdo mudam.

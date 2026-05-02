@@ -1,11 +1,11 @@
-import { Search, Target, Rocket, BarChart3 } from "lucide-react";
+import { Map, Wrench, Link, RefreshCw } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const steps = [
-  { icon: Search, num: "01", title: "Diagnóstico", desc: "Entendemos profundamente seu negócio e seus números" },
-  { icon: Target, num: "02", title: "Estratégia", desc: "Definimos um plano claro de crescimento" },
-  { icon: Rocket, num: "03", title: "Execução", desc: "Implementamos junto com sua equipe" },
-  { icon: BarChart3, num: "04", title: "Escala", desc: "Transformamos crescimento em previsibilidade" },
+  { icon: Map, num: "01", title: "Mapeamento", desc: "Entendemos sua operação, processos e gargalos" },
+  { icon: Wrench, num: "02", title: "Construção do sistema", desc: "Estruturamos sua empresa dentro do sistema" },
+  { icon: Link, num: "03", title: "Integração de dados", desc: "Conectamos áreas e criamos dashboards inteligentes" },
+  { icon: RefreshCw, num: "04", title: "Otimização contínua", desc: "Ajustamos o sistema para gerar crescimento previsível" },
 ];
 
 const ProcessSection = () => {
@@ -22,7 +22,6 @@ const ProcessSection = () => {
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto relative">
-          {/* Connector line */}
           <div className="hidden md:block absolute top-16 left-[12.5%] right-[12.5%] h-px bg-fluxor-gray-medium" />
 
           {steps.map((s, i) => (

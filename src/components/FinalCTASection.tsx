@@ -9,7 +9,7 @@ const FinalCTASection = () => {
       <div className="container mx-auto px-6 lg:px-12 text-center max-w-3xl">
         <div className={`transition-all duration-700 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-fluxor-white tracking-tight leading-tight">
-            Se sua empresa quer crescer com inteligência,
+            Se sua empresa precisa parar de improvisar e começar a crescer com sistema,
             <br />
             <span className="text-fluxor-blue-vibrant">a Fluxor é o próximo passo.</span>
           </h2>
