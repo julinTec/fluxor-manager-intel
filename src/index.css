@@ -129,3 +129,47 @@
 .animate-pulse-subtle {
   animation: pulse-subtle 3s ease-in-out infinite;
 }
+
+/* Fluxor slider */
+.slider-fluxor {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: hsl(220 14% 90%);
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-fluxor::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: hsl(213 83% 56%);
+  border: 3px solid hsl(0 0% 100%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.slider-fluxor::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.slider-fluxor::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: hsl(213 83% 56%);
+  border: 3px solid hsl(0 0% 100%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.slider-fluxor::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: hsl(220 14% 90%);
+}
