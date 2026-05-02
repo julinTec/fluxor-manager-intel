@@ -8,12 +8,15 @@ const ProblemSection = () => {
       <div className="container mx-auto px-6 lg:px-12 max-w-3xl text-center">
         <div className={`transition-all duration-700 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-fluxor-graphite leading-snug tracking-tight">
-            Você cresce… mas não sabe por quê.
-            <br />
-            <span className="text-fluxor-blue-deep">Ou pior: não consegue repetir o crescimento.</span>
+            Você cresce… mas não tem controle real do que está acontecendo.
           </p>
-          <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
-            Sem previsibilidade, sua empresa depende de sorte — não de estratégia.
+          <div className="mt-10 space-y-4 text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto text-left">
+            <p>Vendas não são previsíveis.</p>
+            <p>O financeiro não traz clareza.</p>
+            <p>A operação depende de esforço manual.</p>
+          </div>
+          <p className="mt-10 text-xl md:text-2xl font-semibold text-fluxor-blue-deep tracking-tight">
+            Sem um sistema, sua empresa cresce no escuro.
           </p>
         </div>
       </div>

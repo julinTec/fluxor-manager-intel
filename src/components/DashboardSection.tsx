@@ -8,9 +8,9 @@ const DashboardSection = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className={`text-center mb-12 transition-all duration-700 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-fluxor-graphite tracking-tight">
-            Visão completa do seu crescimento
+            Visualize sua empresa em tempo real
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg">Acompanhe cada métrica em tempo real.</p>
+          <p className="mt-4 text-muted-foreground text-lg">Tome decisões com dados, não com achismo.</p>
         </div>
 
         <div className={`max-w-5xl mx-auto bg-fluxor-graphite rounded-2xl p-6 md:p-10 shadow-2xl transition-all duration-700 delay-200 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>

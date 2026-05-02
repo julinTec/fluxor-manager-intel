@@ -37,17 +37,17 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 lg:px-12 relative z-10 pt-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-fluxor-white leading-tight tracking-tight animate-fade-up">
-            Crescimento previsível para empresas que querem escalar.
+            Sistemas inteligentes que fazem sua empresa crescer com previsibilidade.
           </h1>
           <p className="mt-6 md:mt-8 text-lg md:text-xl text-fluxor-gray-medium leading-relaxed max-w-xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Inteligência estratégica. Gestão eficiente. Resultados reais.
+            Implantamos um sistema completo integrando Comercial, Financeiro, Operacional e BI em um único fluxo de crescimento.
           </p>
           <a
             href="#cta"
             className="inline-flex items-center gap-2 mt-10 bg-fluxor-blue-vibrant hover:bg-fluxor-blue-vibrant/90 text-fluxor-white font-medium px-8 py-4 rounded-md transition-all hover:gap-3 text-base animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            Quero escalar minha empresa
+            Quero meu sistema de crescimento
             <ArrowRight size={18} />
           </a>
         </div>

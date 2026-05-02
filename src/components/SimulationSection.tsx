@@ -15,10 +15,10 @@ const SimulationSection = () => {
             Descubra o potencial de crescimento da sua empresa
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Nossa ferramenta analisa seu cenário e projeta oportunidades reais de escala.
+            Simulamos cenários reais com base nos seus dados e mostramos onde está o crescimento.
           </p>
           <button className="mt-8 bg-fluxor-blue-vibrant hover:bg-fluxor-blue-vibrant/90 text-fluxor-white font-medium px-8 py-4 rounded-md transition-colors text-base">
-            Simular crescimento
+            Simular meu crescimento
           </button>
         </div>
       </div>
