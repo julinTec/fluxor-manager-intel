@@ -21,6 +21,7 @@ const Index = () => {
       <ProblemSection />
       <WhatWeDoSection />
       <SystemOverviewSection />
+      <AISection />
       <ProcessSection />
       <ResultsSection />
       <DifferentialSection />
