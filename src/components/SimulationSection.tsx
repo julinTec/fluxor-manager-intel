@@ -129,7 +129,7 @@ const SimulationSection = () => {
               </div>
 
               <p className="mt-8 text-sm text-fluxor-gray-medium leading-relaxed">
-                Estimamos que até 70% desse custo pode ser eliminado com automação, processos estruturados, sistemas integrados e BI.
+                Estimamos que até 70% desse custo pode ser eliminado com automação, IA, processos estruturados e BI integrado.
               </p>
             </div>
 

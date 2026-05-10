@@ -4,7 +4,7 @@ import { useInView } from "@/hooks/useInView";
 const steps = [
   { icon: Map, num: "01", title: "Mapeamento", desc: "Entendemos sua operação, processos e gargalos" },
   { icon: Wrench, num: "02", title: "Construção do sistema", desc: "Estruturamos sua empresa dentro do sistema" },
-  { icon: Link, num: "03", title: "Integração de dados", desc: "Conectamos áreas e criamos dashboards inteligentes" },
+  { icon: Link, num: "03", title: "Integração de dados", desc: "Conectamos áreas, aplicamos IA e criamos dashboards inteligentes" },
   { icon: RefreshCw, num: "04", title: "Otimização contínua", desc: "Ajustamos o sistema para gerar crescimento previsível" },
 ];
 

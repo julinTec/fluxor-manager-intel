@@ -1,4 +1,4 @@
-import { Users, DollarSign, Cog, BarChart2 } from "lucide-react";
+import { Users, DollarSign, Cog, BarChart2, Sparkles } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const items = [
@@ -6,6 +6,7 @@ const items = [
   { icon: DollarSign, title: "Controle financeiro completo" },
   { icon: Cog, title: "Gestão operacional integrada" },
   { icon: BarChart2, title: "Dashboards em tempo real" },
+  { icon: Sparkles, title: "IA e automação inteligente" },
 ];
 
 const SystemOverviewSection = () => {
@@ -23,7 +24,7 @@ const SystemOverviewSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto">
           {items.map((item, i) => (
             <div
               key={item.title}

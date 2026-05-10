@@ -19,7 +19,7 @@ const WhatWeDoSection = () => {
             O sistema que faz sua empresa funcionar com inteligência
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
-            Criamos e implantamos um sistema sob medida para sua empresa operar com controle, previsibilidade e escala.
+            Criamos e implantamos um sistema sob medida, potencializado por IA, para sua empresa operar com controle, previsibilidade e escala.
           </p>
         </div>
 
