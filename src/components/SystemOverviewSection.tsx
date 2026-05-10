@@ -1,4 +1,4 @@
-import { Users, DollarSign, Cog, BarChart2 } from "lucide-react";
+import { Users, DollarSign, Cog, BarChart2, Sparkles } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const items = [
@@ -6,6 +6,7 @@ const items = [
   { icon: DollarSign, title: "Controle financeiro completo" },
   { icon: Cog, title: "Gestão operacional integrada" },
   { icon: BarChart2, title: "Dashboards em tempo real" },
+  { icon: Sparkles, title: "IA e automação inteligente" },
 ];
 
 const SystemOverviewSection = () => {
