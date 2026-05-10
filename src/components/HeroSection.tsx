@@ -36,11 +36,14 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10 pt-20">
         <div className="max-w-3xl">
+          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-fluxor-blue-vibrant mb-5 animate-fade-up">
+            Sistemas com Inteligência Artificial
+          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-fluxor-white leading-tight tracking-tight animate-fade-up">
             Sistemas inteligentes que fazem sua empresa crescer com previsibilidade.
           </h1>
           <p className="mt-6 md:mt-8 text-lg md:text-xl text-fluxor-gray-medium leading-relaxed max-w-xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Implantamos um sistema completo integrando Comercial, Financeiro, Operacional e BI em um único fluxo de crescimento.
+            Implantamos um sistema completo com <span className="text-fluxor-white font-medium">Inteligência Artificial</span> integrando Comercial, Financeiro, Operacional e BI em um único fluxo de crescimento.
           </p>
           <a
             href="#cta"
