@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import fluxorLogo from "@/assets/fluxor-logo.png";
 
 const links = [
   { label: "Sobre", href: "#sobre" },
@@ -27,8 +28,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <a href="#" className="text-fluxor-white font-bold text-xl tracking-wider">
-          FLUXOR
+        <a href="#" className="flex items-center">
+          <img
+            src={fluxorLogo}
+            alt="Fluxor — Inteligência, Gestão e Crescimento"
+            className="h-10 w-auto object-contain brightness-0 invert"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-10">
