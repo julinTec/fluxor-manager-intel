@@ -27,12 +27,12 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between h-24">
+      <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between h-32">
         <a href="#" className="flex items-center">
           <img
             src={fluxorLogo}
             alt="Fluxor — Inteligência, Gestão e Crescimento"
-            className="h-16 w-auto object-contain brightness-0 invert"
+            className="h-24 w-auto object-contain brightness-0 invert"
           />
         </a>
 
