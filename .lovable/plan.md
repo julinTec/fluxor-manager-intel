@@ -1,30 +1,13 @@
 ## Objetivo
 
-Substituir o texto "FLUXOR" da Navbar pela logo oficial enviada, mantendo a identidade visual.
+Aumentar o tamanho da logo na Navbar, que está aparecendo muito pequena/discreta no topo da página.
 
-## Alterações
+## Alteração
 
-### 1. Asset
-- Copiar `user-uploads://5-2.png` para `src/assets/fluxor-logo.png` (sobrescrevendo a versão atual, já usada também no Footer — assim Navbar e Footer ficam consistentes com a nova arte).
-
-### 2. `src/components/Navbar.tsx`
-- Importar: `import fluxorLogo from "@/assets/fluxor-logo.png"`.
-- Substituir o `<a>` com texto `FLUXOR` por:
-  ```tsx
-  <a href="#" className="flex items-center">
-    <img
-      src={fluxorLogo}
-      alt="Fluxor — Inteligência, Gestão e Crescimento"
-      className="h-10 w-auto object-contain brightness-0 invert"
-    />
-  </a>
-  ```
-- Altura `h-10` (~40px) para se ajustar à navbar `h-20`.
-- Filtro `brightness-0 invert` para renderizar a logo em branco sobre o fundo escuro/transparente da navbar (mesma técnica já usada no Footer).
+### `src/components/Navbar.tsx`
+- Aumentar a altura do `<img>` da logo de `h-10` (~40px) para `h-16` (~64px).
+- Aumentar a altura da própria navbar de `h-20` (80px) para `h-24` (96px), para acomodar a logo maior com respiro adequado acima/abaixo.
+- Manter `w-auto object-contain` para preservar a proporção e o filtro `brightness-0 invert` para a renderização em branco.
 
 ## Arquivos afetados
-- `src/assets/fluxor-logo.png` (substituído pela nova arte)
-- `src/components/Navbar.tsx` (logotipo textual → `<img>`)
-
-## Observação
-- Como o Footer já consome `@/assets/fluxor-logo.png`, ele passa a exibir automaticamente a nova versão da logo, mantendo coerência visual entre topo e rodapé.
+- `src/components/Navbar.tsx` (apenas tamanhos: `h-20` → `h-24` no container, `h-10` → `h-16` no `<img>`).
