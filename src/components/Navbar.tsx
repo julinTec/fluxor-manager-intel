@@ -32,7 +32,7 @@ const Navbar = () => {
           <img
             src={fluxorLogo}
             alt="Fluxor — Inteligência, Gestão e Crescimento"
-            className="h-24 w-auto object-contain brightness-0 invert"
+            className="h-24 w-auto object-contain brightness-0 invert text-3xl"
           />
         </a>
 
