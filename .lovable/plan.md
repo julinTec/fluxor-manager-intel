@@ -1,57 +1,30 @@
 ## Objetivo
 
-Comunicar com clareza que a Fluxor usa **Inteligência Artificial** como parte do sistema — automatizando tarefas, gerando insights e acelerando decisões — sem quebrar a identidade visual atual (preto, grafite, azul vibrante).
+Substituir o texto "FLUXOR" do rodapé pela logo oficial enviada e adicionar o CNPJ da empresa ao final da página.
 
-## Onde inserir IA no site
+## Alterações
 
-### 1. Hero — reforço sutil
-Adicionar uma pequena tag/eyebrow acima do H1:
-`SISTEMAS COM INTELIGÊNCIA ARTIFICIAL`
+### 1. Logo da empresa
+- Copiar `user-uploads://5.png` para `src/assets/fluxor-logo.png`.
+- Importar a logo em `src/components/Footer.tsx` como ES6 module.
+- Substituir o bloco textual `<p>FLUXOR</p>` + tagline por `<img src={fluxorLogo} alt="Fluxor — Inteligência, Gestão e Crescimento" />`, com altura controlada (~`h-16`) e `object-contain`.
+- Como a logo é escura sobre fundo branco e o rodapé é `fluxor-black`, aplicar `brightness-0 invert` (ou similar) para renderizar a logo em branco, mantendo legibilidade e identidade.
+- Remover a tagline em texto, já que a logo enviada já a contém ("Inteligência. Gestão. Crescimento.").
 
-### 2. Subheadline do Hero — micro-ajuste
-De:
-> "Implantamos um sistema completo integrando Comercial, Financeiro, Operacional e BI em um único fluxo de crescimento."
+### 2. CNPJ no rodapé
+- Em `src/components/Footer.tsx`, na faixa final (junto ao copyright), adicionar uma linha:
+  > `CNPJ: 66.663.020/0001-50`
+- Estilo: mesmo tom discreto do copyright (`text-fluxor-gray-medium/50 text-xs`), exibido acima ou ao lado do `© {year} Fluxor...`.
 
-Para:
-> "Implantamos um sistema completo com **Inteligência Artificial** integrando Comercial, Financeiro, Operacional e BI em um único fluxo de crescimento."
-
-### 3. Nova seção dedicada: "Inteligência Artificial aplicada ao seu negócio"
-Inserida após `SystemOverviewSection` (antes de `ProcessSection`). Fundo escuro (`fluxor-black`/`fluxor-graphite`) para contraste com as seções claras vizinhas.
-
-Estrutura:
-- Eyebrow: `INTELIGÊNCIA ARTIFICIAL`
-- Título: **"IA que trabalha junto com sua operação"**
-- Subtítulo: "Automatizamos tarefas repetitivas, geramos insights em tempo real e antecipamos decisões — tudo dentro do seu sistema."
-- Grid de **3 cards** (ícones lucide):
-  1. **Automação de tarefas** (`Bot`) — "Rotinas manuais executadas automaticamente, sem retrabalho."
-  2. **Insights inteligentes** (`Sparkles`) — "A IA analisa seus dados e mostra oportunidades e riscos."
-  3. **Previsões e alertas** (`TrendingUp`) — "Antecipe quedas de venda, atrasos e desvios financeiros."
-
-### 4. SystemOverviewSection — adicionar 5º item
-Card **"IA e automação inteligente"** (`Sparkles`) ao lado dos 4 atuais. Grid passa para 5 colunas em lg.
-
-### 5. WhatWeDoSection — atualizar subtítulo
-> "Criamos e implantamos um sistema sob medida, **potencializado por IA**, para sua empresa operar com controle, previsibilidade e escala."
-
-### 6. ProcessSection — incluir IA na etapa 03
-> "Conectamos áreas, aplicamos IA e criamos dashboards inteligentes."
-
-### 7. Calculadora (SimulationSection)
-> "Estimamos que até 70% desse custo pode ser eliminado com **automação, IA**, processos estruturados e BI integrado."
+### 3. (Opcional, se fizer sentido visual) Navbar
+- Não alterar nesta etapa — manter escopo apenas no rodapé conforme pedido.
 
 ## Arquivos afetados
 
-- `src/components/HeroSection.tsx` — eyebrow + subheadline
-- `src/components/SystemOverviewSection.tsx` — novo card IA
-- `src/components/WhatWeDoSection.tsx` — subtítulo
-- `src/components/ProcessSection.tsx` — texto da etapa 03
-- `src/components/SimulationSection.tsx` — texto explicativo
-- **Novo:** `src/components/AISection.tsx`
-- `src/pages/Index.tsx` — importar e posicionar `AISection` após `SystemOverviewSection`
+- **Novo asset:** `src/assets/fluxor-logo.png` (cópia do upload)
+- `src/components/Footer.tsx` — troca do texto pela logo + linha do CNPJ
 
 ## Identidade visual
 
-- Preto/grafite de fundo na nova seção, azul vibrante `#2F80ED` para ícones e destaques
-- Ícones `lucide-react` (`Bot`, `Sparkles`, `TrendingUp`)
-- Animações `useInView` consistentes com o resto do site
-- Sem verde, sem emojis, mantendo o tom premium/corporativo
+- Logo renderizada em branco sobre o fundo preto do rodapé (via filtro CSS), mantendo o tom premium.
+- CNPJ discreto, sem destaque, apenas como informação institucional padrão de rodapé.
